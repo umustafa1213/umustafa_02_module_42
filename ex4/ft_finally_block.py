@@ -13,7 +13,7 @@ def water_plant(plant_name: str) -> None:
     if plant_name == plant_name.capitalize():
         print(f"Watering {plant_name}: [OK]")
     else:
-        raise PlantError("Invalid plant name to water: '{plant_name}'")
+        raise PlantError(f"Invalid plant name to water: '{plant_name}'")
 
 
 def test_watering_system() -> None:
