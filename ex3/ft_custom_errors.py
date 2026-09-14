@@ -52,6 +52,8 @@ def testing_errors() -> None:
         check_water(20)
     except GardenError as e:
         print(f"Caught {GardenError.__name__}:", e)
+    print()
+    print("All custom error types work correctly!")
 
 
 if __name__ == "__main__":
